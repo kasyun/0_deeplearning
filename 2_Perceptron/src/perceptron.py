@@ -20,9 +20,3 @@ def circuit_or(x1, x2):
 
 def circuit_xor(x1, x2):
     return 0
-
-if __name__ == '__main__':
-    print(f"[AND] x1 = 0, x2 = 0, res = {circuit_and(0, 0)}, expected = 0")
-    print(f"[AND] x1 = 0, x2 = 1, res = {circuit_and(0, 1)}, expected = 0")
-    print(f"[AND] x1 = 1, x2 = 0, res = {circuit_and(1, 0)}, expected = 0")
-    print(f"[AND] x1 = 1, x2 = 1, res = {circuit_and(1, 1)}, expected = 1")
