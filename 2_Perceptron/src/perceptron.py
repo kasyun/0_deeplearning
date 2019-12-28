@@ -33,4 +33,7 @@ def circuit_or(x1, x2):
         return 1
 
 def circuit_xor(x1, x2):
-    return 0
+    s1 = circuit_nand(x1, x2)
+    s2 = circuit_or(x1, x2)
+    y = circuit_and(s1, s2)
+    return y

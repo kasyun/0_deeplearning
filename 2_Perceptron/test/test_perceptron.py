@@ -39,9 +39,9 @@ def test_or(x, y, expected):
     assert res == expected
 
 @pytest.mark.parametrize("x, y, expected",[
-    (0, 0, 1),
-    (0, 1, 0),
-    (1, 0, 0),
+    (0, 0, 0),
+    (0, 1, 1),
+    (1, 0, 1),
     (1, 1, 0),
 ])
 def test_xor(x, y, expected):
