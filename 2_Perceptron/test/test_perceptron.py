@@ -38,12 +38,12 @@ def test_or(x, y, expected):
     res = circuit_or(x, y)
     assert res == expected
 
-# @pytest.mark.parametrize("x, y, expected",[
-#     (0, 0, 1),
-#     (0, 1, 0),
-#     (1, 0, 0),
-#     (1, 1, 0),
-# ])
-# def test_xor(x, y, expected):
-#     res = circuit_xor(x, y)
-#     assert res == expected
+@pytest.mark.parametrize("x, y, expected",[
+    (0, 0, 1),
+    (0, 1, 0),
+    (1, 0, 0),
+    (1, 1, 0),
+])
+def test_xor(x, y, expected):
+    res = circuit_xor(x, y)
+    assert res == expected
