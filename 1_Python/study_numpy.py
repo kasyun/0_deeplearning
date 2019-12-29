@@ -1,7 +1,9 @@
 import numpy as np
 
+
 def main():
     np_1_5_4()
+
 
 def np_1_5_4():
     a = np.array([[1, 2], [3, 4]])
@@ -21,6 +23,7 @@ def np_1_5_4():
     print(a + b)
     print(a * b)
 
+
 def np_1_5_3():
     x = np.array([1.0, 2.0, 3.0])
     y = np.array([2.0, 4.0, 6.0])
@@ -39,6 +42,7 @@ def np_1_5_3():
     # broadcast
     # [0.5 1.  1.5]
     print(x / 2.0)
+
 
 if __name__ == '__main__':
     main()
