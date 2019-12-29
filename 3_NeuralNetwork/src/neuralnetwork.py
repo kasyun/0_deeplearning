@@ -34,6 +34,16 @@ def identity_function(x):
     return x
 
 
+def softmax(a):
+    """Activation function: Softmax.
+    for classification.
+    """
+    exp_a = np.exp(a)
+    sum_exp_a = np.sum(exp_a)
+    y = exp_a / sum_exp_a
+    return y
+
+
 def plot_function(activation_type: str):
     x = np.arange(-5.0, 5.0, 0.1)
     if "sigmoid" in activation_type:
@@ -107,4 +117,6 @@ def init_network():
 if __name__ == '__main__':
     # plot()
     # inner_product_3_3_3()
-    neuralnetwork_3_4_2()
+    # neuralnetwork_3_4_2()
+    a = np.array([1010, 1000, 990])
+    print(softmax(a))
